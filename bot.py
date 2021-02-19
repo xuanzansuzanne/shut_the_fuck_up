@@ -1,8 +1,10 @@
 import discord
+import os
 from discord.ext import commands
+from dotenv import load_dotenv
 
-
-TOKEN = 'ODEyMzY1ODczMDQxODk5NTcw.YC_srQ.E7cvyJW_H5f-hAA_Qkv3Io37HBE'  # TODO : move to env
+load_dotenv()
+TOKEN = os.getenv('TOKEN')
 GUILD = 'Quatro Air'
 
 intents = discord.Intents().default()
